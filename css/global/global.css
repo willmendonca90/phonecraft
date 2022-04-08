@@ -7,9 +7,12 @@
 h1,
 h2,
 h3,
-p,
-span {
+p {
   display: block;
+}
+
+span {
+  display: inline-block;
 }
 
 ul,
