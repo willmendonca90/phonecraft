@@ -1,0 +1,10 @@
+/* global */
+@import "./global/global.css";
+
+/* features */
+@import "./features/features.css";
+@import "./features/color.css";
+@import "./features/typo.css";
+
+/* home */
+@import "./home/header.css";
