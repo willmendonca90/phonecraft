@@ -1,0 +1,77 @@
+.top-bg {
+  background: var(--color-13);
+}
+
+.top-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.top-content p {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.our-phones {
+  padding: 120px 20px;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.our-phones-img {
+  position: relative;
+}
+
+.our-phones-img img {
+  border-radius: 4px;
+}
+
+.our-phones-img span {
+  background: var(--color-12);
+  padding: 8px 16px;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.our-phones-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.our-phones-content h3,
+.our-phones-content h3 + p {
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+}
+
+.our-phones-content h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: var(--color-primary);
+}
+
+.our-phones-content h3 + p {
+  max-width: 40ch;
+}
+
+.our-phones-content a {
+  place-self: end;
+}
+
+.our-phones-details li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.our-phones-bg {
+  background: linear-gradient(
+    to right,
+    var(--color-white) 25%,
+    var(--color-13) 0
+  );
+}

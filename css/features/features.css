@@ -14,8 +14,17 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   line-height: 1.33;
+  text-transform: uppercase;
 }
 .button:hover {
   background: linear-gradient(180deg, #305080 0%, #00010f 100%);
   color: var(--color-1);
 }
+
+/* .button.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: url(../../img/phones/icons/arrow.svg) no-repeat;
+} */

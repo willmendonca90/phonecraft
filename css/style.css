@@ -13,3 +13,6 @@
 @import "./home/testmonial.css";
 @import "./home/tech.css";
 @import "./home/footer.css";
+
+/* phones */
+@import "./phones/phones.css";
