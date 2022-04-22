@@ -47,3 +47,26 @@
 .footer-nav ul li:hover {
   color: var(--color-5);
 }
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+  .footer-img img {
+    display: none;
+  }
+  .footer-address {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .footer-nav {
+    grid-row: 1;
+  }
+}
