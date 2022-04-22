@@ -1,0 +1,98 @@
+.phone-page {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.phone-page-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+.phone-page-img img {
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+.phone-page-img img:first-child {
+  min-width: 100%;
+}
+
+.phone-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.phone-page-content h2,
+.buying,
+.phone-info {
+  grid-column: 1/-1;
+}
+
+.phone-page-content h2 {
+  max-width: 40ch;
+  margin-bottom: 32px;
+}
+
+.buying {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: self-start;
+  gap: 8px 12px;
+  margin-bottom: 32px;
+}
+
+.buying a {
+  grid-row: span 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.buying a::after {
+  content: "";
+  display: inline-block;
+  background: url(../../icons/cart.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.buying span {
+  display: flex;
+  align-items: center;
+  background: var(--color-14);
+  border-radius: 4px;
+  padding: 2px 4px;
+  gap: 8px;
+}
+
+.tech-info {
+  margin-bottom: 18px;
+}
+
+.phone-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+@media (max-width: 800px) {
+  .phone-page {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .phone-page-img {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .phone-page-content {
+    grid-template-columns: 1fr;
+  }
+}
