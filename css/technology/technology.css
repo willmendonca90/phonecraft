@@ -1,0 +1,63 @@
+.tech-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.tech-page-img img {
+  border-radius: 4px 0 0 4px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-page-content {
+  background: var(--color-14);
+  border-radius: 0 4px 4px 0;
+  padding: 32px 60px;
+}
+
+.tech-page-list {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 40px;
+}
+
+.tech-page-list img {
+  margin-bottom: 4px;
+}
+.tech-page-list h3 {
+  margin-bottom: 8px;
+}
+.tech-page-list p {
+  max-width: 33ch;
+}
+
+@media (max-width: 900px) {
+  .tech-page {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .tech-page-img img {
+    display: none;
+  }
+  .tech-page-content {
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .top-content h2 {
+    font-size: 2.5rem;
+  }
+  .top-content p {
+    font-size: 1rem;
+  }
+  .tech-page-list {
+    grid-template-columns: 1fr;
+  }
+  .tech-page-list p {
+    max-width: initial;
+  }
+}

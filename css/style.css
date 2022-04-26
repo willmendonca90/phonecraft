@@ -19,3 +19,6 @@
 @import "./phones/phone-page.css";
 @import "./phones/choose-yours.css";
 @import "./phones/grab.css";
+
+/* technology */
+@import "./technology/technology.css";
